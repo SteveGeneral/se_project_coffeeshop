@@ -109,19 +109,19 @@
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Book a Table</h2>
           <form class="reservation__form">
-            <label class="form__label" for="name-input">Full Name</label>
+            <label class="reservation__label" for="name-input">Full Name</label>
             <input
-              class="form__input"
+              class="reservation__input"
               type="text"
               id="name-input"
               placeholder="Enter your full name"
               required
             />
-            <label class="form__label" for="number-of-guests-input"
+            <label class="reservation__label" for="number-of-guests-input"
               >Number of Guests</label
             >
             <input
-              class="form__input"
+              class="reservation__input"
               type="number"
               id="number-of-guests-input"
               min="1"
@@ -129,31 +129,35 @@
               placeholder="1-8"
               required
             />
-            <label class="form__label" for="datetime-input">Date & Time</label>
+            <label class="reservation__label" for="datetime-input"
+              >Date & Time</label
+            >
             <input
-              class="form__input"
+              class="reservation__input"
               type="datetime-local"
               id="datetime-input"
               required
             />
-            <label class="form__label" for="email-input">Email</label>
+            <label class="reservation__label" for="email-input">Email</label>
             <input
-              class="form__input"
+              class="reservation__input"
               type="email"
               id="email-input"
               placeholder="Enter your email"
               required
             />
-            <label class="form__checkbox-label">
+            <label class="reservation__checkbox-label">
               <input
-                class="form__checkbox"
+                class="reservation__checkbox"
                 type="checkbox"
                 id="terms"
                 required
               />
               I agree with the terms of use
             </label>
-            <button class="form__button" type="submit">Book a Table</button>
+            <button class="reservation__button" type="submit">
+              Book a Table
+            </button>
           </form>
         </section>
         <section id="menu" class="menu"></section>
