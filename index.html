@@ -160,10 +160,56 @@
             </button>
           </form>
         </section>
-        <section id="menu" class="menu"></section>
-        <section id="about" class="about"></section>
+        <section id="menu" class="menu">
+          <h2 class="menu__title">Menu</h2>
+          <ul class="menu__cards">
+            <li class="card">
+              <h3 class="card__title">Espresso</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Single Shot</li>
+                <li class="card__list-item">Double Shot</li>
+              </ul>
+            </li>
+            <li class="card">
+              <h3 class="card__title">Latte</h3>
+              <ul class="card__list">
+                <li class="card__list-item">Vanilla</li>
+                <li class="card__list-item">Caramel</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="about" class="about">
+          <h2 class="about__title">About Our Coffee Shop</h2>
+          <p class="about__content">
+            Located in the heart of Triple Peaks Library, we serve high-quality
+            coffee in a cozy atmosphere.
+          </p>
+          <div class="about__circle"></div>
+        </section>
       </main>
-      <footer id="contacts" class="footer"></footer>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Triple Peaks Coffee Shop logo"
+            class="footer__logo"
+          />
+          <nav class="footer__nav">
+            <ul class="footer__column">
+              <li><a href="#recipes" class="footer__link">Recipes</a></li>
+              <li>
+                <a href="#reservation" class="footer__link">Book a Table</a>
+              </li>
+              <li><a href="#menu" class="footer__link">Menu</a></li>
+              <li><a href="#about" class="footer__link">About</a></li>
+            </ul>
+          </nav>
+          <div class="footer__copyright">© 2024 Steve General</div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
