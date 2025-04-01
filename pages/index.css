@@ -1,183 +1,13 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: "Inter", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.header {
-  padding: 30px 80px 40px;
-  background: center / cover no-repeat #fff url(../images/background_header.svg);
-  position: relative;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__title {
-  margin: 183px 0 0;
-  max-width: 729px;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: -0.6px;
-}
-
-.header__span-accent {
-  display: block;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-style: italic;
-
-  color: #3f96f3;
-}
-
-.header__description {
-  margin: 28px 0 0;
-  max-width: 683px;
-}
-
-.header__image {
-  position: absolute;
-  top: 124px;
-  right: 5px;
-  width: 646px;
-  height: 568px;
-}
-
-.header__footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.header__paragraph {
-  margin: 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__logo {
-  width: 105px;
-  height: 39px;
-  position: relative;
-}
-
-.nav__links {
-  display: flex;
-  list-style-type: none;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__link {
-  transition: opacity 0.3s ease;
-  text-decoration: none;
-  color: #000;
-}
-
-.nav__link: hover {
-  opacity: 0.5;
-}
-
-.recipes {
-  color: #fff;
-  background-color: #0a2750;
-  padding: 100px 80px 215px;
-}
-
-.recipes__title {
-  margin: 0 0 24px;
-}
-
-.recipes__subtitle {
-  margin: 0 0 80px;
-}
-
-.recipes__videos {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-}
-
-.recipes__iframe {
-  border: none;
-}
-
-.recipes__video-caption {
-  display: flex;
-  justify-content: space-between;
-}
-
-.reservation {
-  background-color: #d9e7ff;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.reservation__title {
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 52px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.reservation__form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.reservation__input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #000;
-}
-
-.reservation__input::placeholder {
-  color: #838383;
-}
-
-.reservation__checkbox-label {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  color: #000;
-}
-
-.reservation__checkbox {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  border-radius: 2px;
-}
-
-.reservation__button {
-  background-color: #1878dc;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.reservation__button:hover {
-  background-color: #3f96f3;
-}
+@import url(../vendor/normalize.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+@import url(../blocks/form.css);
+@import url(../blocks/menu.css);
+@import url(../blocks/card.css);
+@import url(../blocks/about.css);
 
 .menu {
   background-color: #ffffff;
@@ -188,6 +18,12 @@
   font-size: 36px;
   font-weight: 700;
 }
+.menu__subtitle {
+  font-size: 20px;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 20px;
+}
+
 .menu__cards {
   display: flex;
   justify-content: center;
@@ -224,6 +60,14 @@
   font-size: 36px;
   font-weight: 700;
 }
+
+.about__content {
+  font-family: "Noto Serif", serif;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .about__circle {
   position: absolute;
   width: 100px;
@@ -252,7 +96,7 @@
 
 .footer {
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
   color: white;
 }
@@ -266,6 +110,7 @@
 .footer__link {
   color: white;
   text-decoration: none;
+  font-family: "Noto Serif", serif;
   transition: opacity 0.3s ease;
 }
 .footer__link:hover {
@@ -273,4 +118,5 @@
 }
 .footer__copyright {
   margin-top: 20px;
+  font-size: 14px;
 }
