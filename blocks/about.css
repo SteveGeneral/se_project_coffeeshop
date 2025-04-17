@@ -2,7 +2,7 @@
   background-color: #0a2850;
   color: #fff;
   font-family: "Inter", Arial, sans-serif;
-  padding: 100px 80px 173px;
+  padding: 100px 80px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -11,12 +11,15 @@
 }
 
 .about__title {
-  max-width: 251px;
-  font-weight: 500;
+  font-family: "Inter", sans-serif;
   font-size: 44px;
   line-height: 52px;
-  margin: 0;
+  font-weight: 500;
+  margin: 0 0 80px;
+  max-width: 660px;
+  text-align: left;
 }
+
 .about__content {
   font-family: "Noto Serif", serif;
   font-size: 20px;
