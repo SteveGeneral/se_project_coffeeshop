@@ -8,14 +8,14 @@
       name="description"
       content="Enjoy specialty coffee, cozy vibes, and a creative study space at Triple Peaks's Coffee Shop in the Triple Peaks Library."
     />
-    <meta name="author" content="Steve General" />
+    <meta name="author" content="Stephen Owusu" />
     <meta name="keywords" content="coffee, espresso, cappuccino, mocha" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@0,400;1,400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -49,8 +49,8 @@
           class="header__image"
         />
         <h1 class="header__title">
-          <span class="header__span-accent">Specialty Coffee</span>in the Triple
-          Peaks Library
+          <span class="header__span-accent">Specialty Coffee</span>
+          in the Triple Peaks Library
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
@@ -78,8 +78,6 @@
             <div>
               <iframe
                 class="recipes__iframe"
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=fIb6PPSK-caGvrSK"
                 title="Aeropress recipe"
                 allow="accelerometer; autoplay; clipboard-write;
@@ -88,13 +86,12 @@
                 allowfullscreen
               ></iframe>
               <p class="recipes__video-caption">
-                <span>Aeropress recipe</span>~5 min</span>
+                <span>Aeropress recipe</span> <span>~5 min</span>
+              </p>
             </div>
             <div>
               <iframe
                 class="recipes__iframe"
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=WTkM6icFgxx8KUFT"
                 title="French Press recipe"
                 allow="accelerometer; autoplay; clipboard-write;
@@ -111,19 +108,19 @@
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Book a Table</h2>
           <form class="reservation__form form">
-            <label class="reservation__label" for="name-input">Full Name</label>
+            <label class="form__label" for="name-input">Full Name</label>
             <input
-              class="reservation__input"
+              class="form__input"
               type="text"
               id="name-input"
               placeholder="Enter your full name"
               required
             />
-            <label class="reservation__label" for="number-of-guests-input"
+            <label class="form__label" for="number-of-guests-input"
               >Number of Guests</label
             >
             <input
-              class="reservation__input"
+              class="form__input"
               type="number"
               id="number-of-guests-input"
               min="1"
@@ -131,35 +128,31 @@
               placeholder="1-8"
               required
             />
-            <label class="reservation__label" for="datetime-input"
-              >Date & Time</label
-            >
+            <label class="form__label" for="datetime-input">Date & Time</label>
             <input
-              class="reservation__input"
+              class="form__input"
               type="datetime-local"
               id="datetime-input"
               required
             />
-            <label class="reservation__label" for="email-input">Email</label>
+            <label class="form__label" for="email-input">Email</label>
             <input
-              class="reservation__input"
+              class="form__input"
               type="email"
               id="email-input"
               placeholder="Enter your email"
               required
             />
-            <label class="reservation__checkbox-label">
+            <label class="form__checkbox-label">
               <input
-                class="reservation__checkbox"
+                class="form__checkbox"
                 type="checkbox"
                 id="terms"
                 required
               />
               I agree with the terms of use
             </label>
-            <button class="reservation__button" type="submit">
-              Book a Table
-            </button>
+            <button class="form__button" type="submit">Book a Table</button>
           </form>
         </section>
         <section class="menu">
@@ -173,19 +166,21 @@
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Regular (12oz) <span class="card__list-divider"></span> $1
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Large (16oz) <span class="card__list-divider"></span> $1.25
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  XL (20oz) <span class="card__list-divider"></span> $1.5
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Party-size(24oz, decaf)
+                  <span class="card__list-divider"></span> $1.75
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Iced Coffee (16oz)
+                  <span class="card__list-divider"></span> $1.25
                 </li>
               </ul>
             </li>
@@ -193,19 +188,20 @@
               <h3 class="card__title">Espresso</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Espresso <span class="card__list-divider"></span> $2.25
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Macchiato <span class="card__list-divider"></span> $2.25
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Cortado <span class="card__list-divider"></span> $3
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Mocha <span class="card__list-divider"></span> $10
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Sunrise in the Bay Area (decaf)
+                  <span class="card__list-divider"></span> $3
                 </li>
               </ul>
             </li>
@@ -213,19 +209,20 @@
               <h3 class="card__title">Baked Goods</h3>
               <ul class="card__list">
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Almond Croissant <span class="card__list-divider"></span> $2
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Banana Bread <span class="card__list-divider"></span> $1.75
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Key Lime Pie <span class="card__list-divider"></span> $3
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Blue Velvet Cake
+                  <span class="card__list-divider"></span> $3.75
                 </li>
                 <li class="card__list-item">
-                  Regular (120z) <span class="card__list-divider"></span> $1
+                  Web Cookie<span class="card__list-divider"></span> $2
                 </li>
               </ul>
             </li>
@@ -235,15 +232,15 @@
           <h2 class="about__title">About the coffeeshop</h2>
           <div class="about__content">
             <p class="about__paragraph">
-              our coffee shop is located in the Triple Peaks Library. It
+              Our coffee shop is located in the Triple Peaks Library. It
               features 6 table and free WiFi.
             </p>
             <p class="about__paragraph">
-              our main mission is keeping guests cozy and energized.
+              Our main mission is keeping guests cozy and energized.
             </p>
             <p class="about__paragraph">
               Besides that, we try to reduce our environmental impact - so we
-              don't sell single-use cups. But you can buy one of our reuable
+              don't sell single-use cups. But you can buy one of our reusable
               cups!
             </p>
           </div>
@@ -255,7 +252,7 @@
         <div class="footer__content">
           <img
             src="./images/logo_coffeeshop_light.svg"
-            alt="Triple Espresson logo"
+            alt="Triple Espresso logo"
             class="footer__logo"
           />
           <div class="footer__column">

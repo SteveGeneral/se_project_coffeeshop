@@ -9,6 +9,7 @@
   overflow: hidden;
   z-index: 0;
 }
+
 .about__title {
   max-width: 251px;
   font-weight: 500;
@@ -17,10 +18,14 @@
   margin: 0;
 }
 .about__content {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
   max-width: 660px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  text-align: left;
+  z-index: 2;
+  margin: 0;
 }
 
 .about__paragraph {

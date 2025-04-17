@@ -22,13 +22,16 @@
   display: block;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
-
   color: #3f96f3;
 }
 
 .header__description {
   margin: 28px 0 0;
   max-width: 683px;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .header__image {
@@ -44,6 +47,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  color: #000;
+  font-weight: 400;
 }
 
 .header__paragraph {
