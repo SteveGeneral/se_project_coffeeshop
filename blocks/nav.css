@@ -25,6 +25,7 @@
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .nav__link:hover {

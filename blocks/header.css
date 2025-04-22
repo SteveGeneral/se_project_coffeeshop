@@ -6,7 +6,9 @@
   flex-direction: column;
   background-image: url(../images/background_header.svg);
   background-size: cover;
+  background-position: center;
   position: relative;
+  z-index: 1;
 }
 
 .header__title {
@@ -40,6 +42,7 @@
   right: 5px;
   width: 646px;
   height: 568px;
+  z-index: -1;
 }
 
 .header__footer {
@@ -47,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #000;
+  color: #fff;
   font-weight: 400;
 }
 
