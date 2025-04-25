@@ -35,7 +35,10 @@
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
-  margin: 20px;
+  margin-bottom: 20px;
+}
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
